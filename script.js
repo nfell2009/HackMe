@@ -24,7 +24,7 @@ function startup() {
             setTimeout(function() {
                 e = false
             }, 400);
-            return false
+            return
         }
         if (n.ctrlKey) {
             t = true;
