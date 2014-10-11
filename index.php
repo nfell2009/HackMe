@@ -96,6 +96,9 @@
 
 	<!-- No more comments from here on. -->
 	<body onload="startup();">
+	
+		<small>View Source: <a href="https://github.com/acecheese/HackMe.git">GitHub</a> | <a href="https://github.com/acecheese/HackMe/archive/master.zip">Zip</a></small>
+	
 		<table>
 			<tr>
 				<td><input type="text" name="InsertText" placeholder="Random String." id="InsertText"/></td>
