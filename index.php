@@ -2,7 +2,7 @@
 
 	/*
 	 * LICENCING. #DoWhatTheFuckYouWant.
-	 * That's right.
+	 * That's right bitchz
 	*/
 
 	$mysqlHost = "localhost";
