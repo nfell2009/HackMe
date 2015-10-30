@@ -1,4 +1,6 @@
-//Called on body load to start the blinking task and also key events.
+/**
+ * Called on body load to start the blinking task and also key events.
+ */
 function startup() {
     var e = false;
     var t = false;
@@ -50,7 +52,9 @@ function startup() {
     })
 }
 
-//Handles the insertion.
+/**
+ * Handles the insertion.
+ */
 function insert(e) {
     if (e == "") {
         e = randomGen()
@@ -58,7 +62,9 @@ function insert(e) {
     loadXMLDoc("?INSERT=" + e)
 }
 
-//Handles getting the ID.
+/**
+ * Handles getting the ID.
+ */
 function get_id(e) {
     if (e == "") {
         min = 1;
@@ -68,12 +74,14 @@ function get_id(e) {
     loadXMLDoc("?GET_ID=" + e)
 }
 
-//Handles dumping the data.
+/**
+ * Handles dumping the data.
+ * /
 function dump_data() {
     loadXMLDoc("?SQL_DATA")
 }
 
-/*
+/**
  * Once handled by it's function it's passed to the AJAX MAKER!
  * WOOOOO AJAX. <3 
  */
@@ -94,14 +102,14 @@ function loadXMLDoc(e) {
     t.send()
 }
 
-/*
+/**
  * Just to tell if a string ends in a string.
  */
 function endsWith(e, t) {
     return e.indexOf(t, e.length - t.length) !== -1
 }
 
-/*
+/**
  * You see that help button. 
  * Yes. This inserts the malicious code.
  */
@@ -109,7 +117,7 @@ function insertAssist() {
     $("#IDNumber").val("1';TRUNCATE TABLE `Hack_Data`;'")
 }
 
-/*
+/**
  * If you're too lazy to keyboard slam then call this!
  */
 function randomGen() {
